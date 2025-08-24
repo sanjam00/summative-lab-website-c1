@@ -1,8 +1,10 @@
 body {
+    /* ensures there's no default margins or padding */
     margin: 0;
     padding: 0;
 }
 
+/* Style the header*/
 .header {
     background-color: #606c38;
     text-align: center;
@@ -10,34 +12,45 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-bottom: .5em;
     padding-top: .5em;
-} .header h2 {
+}
+
+.header h2 {
     color: #283618;
     font-weight: lighter;
     font-size: 3em;
     letter-spacing: 0.2rem;
-} .header h3 {
+}
+
+.header h3 {
     color: #fff7e0;
     font-size: 1.5rem;
     font-weight: lighter;
     letter-spacing: 0.2rem;
 }
 
+/* Style the navigation bar */
 .navbar {
     background-color: #283618;
     position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
-} .navbar ul {
+}
+
+.navbar ul {
     margin: 0 1em;
     padding: 2em;
     text-align: center;
-} .navbar ul li {
+}
+
+.navbar ul li {
     list-style: none;
     display: inline;
     padding: 2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-} .navbar ul li a {
+}
+
+.navbar ul li a {
     color: #773004;
     background-color: #eae9e6;
     border: none;
@@ -50,38 +63,49 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     cursor: pointer;
     display: inline-block;
-} .navbar ul li a:hover {
+}
+
+.navbar ul li a:hover {
     background-color: #c6c3bc;
     color: #773004;
     transform: scale(1.08);
 }
 
+/* Style the main content: About Me, Projects, and Contact sections*/
 .main-content {
     text-align: center;
     background-color: #eae9e6;
     font-family: Tahoma, 'Trebuchet MS', sans-serif;
     font-weight: lighter;
     line-height: 1.5rem;
-} .main-content h4 {
+}
+
+.main-content h4 {
     /* style the About Me, Projects, and Contacts headers (h4) */
     font-size: 1.5rem;
     color: #773004;
     letter-spacing: .2rem;
     padding: 1.5em 0;
-} .bio {
+}
+
+.bio {
     text-align: justify;
     padding: 0 4em;
-} .main-content #languages {
+}
+
+.main-content #languages {
     text-align: center;
     font-weight: bold;
 }
 
+/* Style the Projects display*/
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 1em;
 }
+
 .project-item {
     max-width: 60%;
     padding: .5em;
@@ -90,7 +114,8 @@ body {
     box-shadow: 0 4px 8px #00000037;
     border-radius: 10px;
     transition: transform 0.3s;
-} 
+}
+
 .project-item:hover {
     transform: scale(1.05);
 }
@@ -103,7 +128,8 @@ body {
     display: block;
     margin: 0 auto;
 }
-.project-link{
+
+.project-link {
     color: #fff7e0;
     background-color: #bb9653;
     border: none;
@@ -116,22 +142,31 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     cursor: pointer;
     display: inline-block;
-} .project-link:hover {
+}
+
+.project-link:hover {
     background-color: #773004;
     color: #fff7e0;
     transform: scale(1.08);
 }
 
+/* Style the contact list*/
 .main-content .contact-list {
     list-style: none;
     display: flex;
     justify-content: center;
-} .main-content .contact-list li {
+}
+
+.main-content .contact-list li {
     padding: 1em 2em;
     padding-bottom: 1em;
-} .main-content .contact-list li a:hover {
+}
+
+.main-content .contact-list li a:hover {
     transform: scale(1.05);
-} .main-content .contact-list li a {
+}
+
+.main-content .contact-list li a {
     color: #fff7e0;
     background-color: #bb9653;
     border: none;
@@ -143,7 +178,9 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     cursor: pointer;
     display: inline-block;
-} .main-content .contact-list li a:hover {
+}
+
+.main-content .contact-list li a:hover {
     background-color: #773004;
     color: #fff7e0;
     transform: scale(1.08);
